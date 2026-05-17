@@ -1,0 +1,15 @@
+{
+  "id": 101,
+  "customer": {
+    "name": "Asha",
+    "address": {
+      "city": "Austin",
+      "state": "TX"
+    }
+  },
+  "items": [
+    {"sku": "A1", "quantity": 2},
+    {"sku": "B2", "quantity": 1}
+  ],
+  "active": true
+}
