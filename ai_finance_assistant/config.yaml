@@ -1,0 +1,24 @@
+app:
+  name: AI Finance Assistant
+  environment: local
+  default_knowledge_level: beginner
+
+agents:
+  enabled:
+    - finance_qa
+    - portfolio_analysis
+    - market_analysis
+    - goal_planning
+    - news_synthesizer
+    - tax_education
+
+market_data:
+  provider: in_memory
+  cache_ttl_seconds: 300
+
+rag:
+  provider: in_memory
+  top_k: 2
+
+compliance:
+  education_only: true
