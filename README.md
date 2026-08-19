@@ -145,3 +145,31 @@ spark-submit \
 - Replace local output paths with cloud/object storage paths when deploying.
 - Add schema-specific transformations if downstream trusted tables need fixed columns instead of the generic `flattened_values` map and `flattened_json` payload.
 - Add connector dependencies to `pom.xml` if you want to write trusted data into a database, Hive table, Delta table, or warehouse.
+
+## AI Finance Assistant Prototype
+
+The AI Finance Assistant now lives in `ai_finance_assistant/` as a Python project with the requested layout:
+
+```text
+ai_finance_assistant/
+├── src/
+│   ├── agents/
+│   ├── core/
+│   ├── data/
+│   ├── rag/
+│   ├── web_app/
+│   ├── utils/
+│   └── workflow/
+├── tests/
+├── config.yaml
+├── requirements.txt
+└── README.md
+```
+
+Run its tests with:
+
+```bash
+python -m pytest ai_finance_assistant/tests
+```
+
+See `ai_finance_assistant/README.md` for prototype details and extension points.
